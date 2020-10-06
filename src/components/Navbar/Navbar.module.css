@@ -1,7 +1,7 @@
 .nav {
-    width: 200px;
     margin: 0;
     background: pink;
+    display: flex;
 }
 
 .item a {
