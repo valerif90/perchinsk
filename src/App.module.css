@@ -1,11 +1,33 @@
-.App {
-  text-align: center;
-  background: #61dafb;
+.wallpaper {
+  /* background-image: url('./components/Images/barbara-palvin-31-wallpaper.jpg'); */
+  position: absolute;
+  z-index: 1;
+  position: fixed;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
 }
+.container {
+  background-color:dodgerblue;;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  z-index: 2;
+  opacity: 0.5;
+}
+
 section {
   display: flex;
 }
-.container {
-  display: block;
+
+div {
+  font-family: "MV Boli";
 }
 
+.container_content {
+  width: 1000px;
+  margin: 10px 0 0 10px;
+  background-color: dodgerblue;
+}
+/*body {*/
+/*  width: 1400px;*/
+/*}*/
