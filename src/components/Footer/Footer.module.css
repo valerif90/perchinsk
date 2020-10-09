@@ -1,9 +1,5 @@
-.header {
-    background: #6ca85f;
-    height: 200px;
-    display: flex;
-}
 .div {
+    background: white;
     font-family: "Fira Code Light";
     color: darkblue;
     font-size: 40px;

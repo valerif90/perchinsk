@@ -15,7 +15,7 @@ import Login from "./components/Login/Login";
 const App = () => {
   return (
       <div>
-          <img className={styles.wallpaper} src="https://arhivach.ng/storage2/2/98/298bfd9a5ea4c5662e8678202d4a5a02.jpg" alt=""/>
+          <img className={styles.wallpaper} src="https://upl.stack.com/wp-content/uploads/2015/12/17010133/Stack-Lunges-outside.jpg" alt=""/>
              <div className={styles.container}>
                   <HeaderContainer />
                  <div>
@@ -23,7 +23,7 @@ const App = () => {
                      <div className={styles.container_content}>
                           <Route path='/profile' component={ProfileContainer}/>
                           <Route path='/users' component={Users}/>
-                          <Route path='/login' component={Login}/>
+                         <Route path='/login' render={ () => <Login /> }/>
                           <Route path='/exercises' component={Exercises}/>
                           <Route path='/trainings' component={Trainings}/>
                     </div>

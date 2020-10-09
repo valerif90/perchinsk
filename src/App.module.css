@@ -1,18 +1,15 @@
 .wallpaper {
-  /* background-image: url('./components/Images/barbara-palvin-31-wallpaper.jpg'); */
-  position: absolute;
   z-index: 1;
   position: fixed;
-  /* background-attachment: fixed; */
   background-repeat: no-repeat;
 }
 .container {
-  background-color:dodgerblue;;
+  background-color:dodgerblue;
   position: relative;
   width: 1170px;
   margin: 0 auto;
   z-index: 2;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 section {
