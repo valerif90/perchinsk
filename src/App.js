@@ -15,7 +15,6 @@ import Login from "./components/Login/Login";
 const App = () => {
   return (
       <div>
-          <img className={styles.wallpaper} src="https://upl.stack.com/wp-content/uploads/2015/12/17010133/Stack-Lunges-outside.jpg" alt=""/>
              <div className={styles.container}>
                   <HeaderContainer />
                  <div>
