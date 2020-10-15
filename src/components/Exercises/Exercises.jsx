@@ -7,8 +7,7 @@ const Exercises = () => {
 
     return (
         <div className={styles.container}>
-            Users
-            <div>kdfksfl</div>
+            Exercises
         </div>
     )
  };

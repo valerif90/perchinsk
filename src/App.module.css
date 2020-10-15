@@ -1,29 +1,16 @@
-.wallpaper {
-  z-index: 1;
-  position: fixed;
-  background-repeat: no-repeat;
-}
+/*.wallpaper {*/
+/*  z-index: 1;*/
+/*  position: fixed;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
 .container {
-  background-color:dodgerblue;
+  background-color:#f1f1f1;
   position: relative;
   margin: 0 auto;
-  z-index: 2;
-  opacity: 0.9;
 }
-
-section {
-  display: flex;
-}
-
-div {
-  font-family: "MV Boli";
-}
-
 .container_content {
+  height: 3000px;
   width: 1000px;
   margin: 10px 0 0 10px;
-  background-color: dodgerblue;
+  background-color: #f1f100;
 }
-/*body {*/
-/*  width: 1400px;*/
-/*}*/

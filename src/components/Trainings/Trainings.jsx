@@ -4,8 +4,7 @@ import styles from './Trainings.module.css';
 const Trainings = () => {
     return (
         <div className={styles.container}>
-            Users
-            <div>kdfksfl</div>
+            Trainings
         </div>
     )
  };

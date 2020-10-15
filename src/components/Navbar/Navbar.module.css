@@ -1,15 +1,16 @@
 .nav {
+    position: fixed;
     margin: 0;
-    background: red;
+    background: #ffffff;
     display: flex;
 }
 
 .item a {
-    color: white;
+    color: blue;
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 160px;
 }
 .item a.active {
-    color: darkblue;
+    color: coral;
 }

@@ -6,7 +6,6 @@ const Profile = () => {
     return (
         <div>
             Profile
-            <div>dkfkdfjdkf</div>
         </div>
     )
 };
