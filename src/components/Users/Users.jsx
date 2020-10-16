@@ -9,4 +9,23 @@ const Users = () => {
     )
  };
 
+export const Hello = () => {
+    return (
+        <div>Hello Yo!</div>
+    )
+}
+
+export const Yo = <h1>Yoooo!</h1>
+
+
+
+    export const Button = (props) => {
+        return <div>
+            <button name={props.name}></button>
+        </div>
+}
+
+
+
+
 export default Users;
