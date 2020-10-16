@@ -1,36 +1,45 @@
-import React from 'react';
-import logo from './bear.svg';
-import styles from './App.module.css';
-import Navbar from "./components/Navbar/Navbar";
-import Users from "./components/Users/Users";
-import {Route} from "react-router-dom";
-import ProfileContainer from "./components/Profile/ProfileContainer";
-import Exercises from "./components/Exercises/Exercises";
-import Trainings from "./components/Trainings/Trainings";
-import HeaderContainer from "./components/Header/HeaderContainer";
-import FooterContainer from "./components/Footer/FooterContainer";
-import Login from "./components/Login/Login";
-
-
-const App = () => {
-  return (
-      <div>
-             <div className={styles.container}>
-                  <HeaderContainer />
-                 <div>
-                  <Navbar/>
-                     <div className={styles.container_content}>
-                          <Route path='/profile' component={ProfileContainer}/>
-                          <Route path='/users' component={Users}/>
-                         <Route path='/login' render={ () => <Login /> }/>
-                          <Route path='/exercises' component={Exercises}/>
-                          <Route path='/trainings' component={Trainings}/>
-                    </div>
-                 </div>
-                 <FooterContainer />
-          </div>
-      </div>
-        )
+import React from "react";
+import API from "./utils/API";
+import User from "./components/User/User";
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true,
+            name: null,
+            avatar: null,
+            email: null
+        };
+    }
+    render() {
+        const { isLoading, name, avatar, email } = this.state;
+        return (
+            <User isLoading={isLoading} name={name} avatar={avatar} email={email} />
+        );
+    }
+    async componentDidMount() {
+        // Load async data.
+        let userData = await API.get('/', {
+            params: {
+                results: 1,
+                inc: 'name,email,picture'
+            }
+        });
+// Парсим резульатты.
+        userData = userData.data.results[0];
+// Обновляем стейт и ререндерим наш компонент.
+        const name = `${userData.name.first} ${userData.name.last}`;
+        const avatar = userData.picture.large;
+        const email = userData.email;
+        this.setState({
+            ...this.state, ...{
+                isLoading: false,
+                name,
+                avatar,
+                email
+            }
+        });
     }
 
+}
 export default App;
