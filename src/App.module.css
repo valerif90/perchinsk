@@ -4,13 +4,8 @@
 /*  background-repeat: no-repeat;*/
 /*}*/
 .container {
+  display: flex;
   background-color:#f1f1f1;
   position: relative;
   margin: 0 auto;
-}
-.container_content {
-  height: 3000px;
-  width: 1000px;
-  margin: 10px 0 0 10px;
-  background-color: #f1f100;
 }
