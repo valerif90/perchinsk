@@ -6,11 +6,13 @@ import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
     return(
-        <div>
-            <Header />
         <div className={styles.container}>
+            <Header />
+        <div>
             <Navbar />
+            <div className={styles.container_content}>
             <Users />
+            </div>
         </div>
         </div>
     )
