@@ -3,6 +3,10 @@
 /*  position: fixed;*/
 /*  background-repeat: no-repeat;*/
 /*}*/
+
+body {
+  background:#fff1e5;
+}
 .container {
   display: flex;
   background-color:#f1f1f1;
@@ -11,4 +15,5 @@
 }
 .container_content {
   background-color: blanchedalmond;
+  font-size: 30px;
 }

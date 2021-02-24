@@ -3,15 +3,18 @@ import styles from './App.module.css';
 import Users from "./components/Users/Users";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import {Route} from 'react-router-dom';
+import Messages from "./components/Messages/Messages";
 
 const App = () => {
     return(
-        <div className={styles.container}>
-            <Header />
         <div>
+            <Header />
+        <div className={styles.container}>
             <Navbar />
             <div className={styles.container_content}>
-            <Users />
+            < Route path='/users' component={Users} />
+            < Route path='/messages' component={Messages} />
             </div>
         </div>
         </div>
