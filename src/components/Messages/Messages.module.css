@@ -1,0 +1,6 @@
+.dialogs {
+    display: flex;
+}
+.messages {
+    padding-left: 50px;
+}

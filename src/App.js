@@ -11,13 +11,14 @@ import Profile from './components/Profile/Profile';
 const App = () => {
     return (
         <div className={styles.container}>
-            <Header />
+                <Header />
             <div className={styles.section}>
-            <Navbar />
+                <Navbar />
             <div className={styles.container_content}>
-            <Route path='/profile' component={Profile}/>
-            <Route path='/user' component={User}/>
-            <Route path='/users' component={Users}/>
+                <Route path='/profile' component={Profile}/>
+                <Route path='/user' component={User}/>
+                <Route path='/users' component={Users}/>
+                <Route exact path='/messages' component={Messages}/>
             </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ body {
 }
 .container_content {
   background-color: blanchedalmond;
+  width: 100%;
   font-size: 30px;
 }
 .section {

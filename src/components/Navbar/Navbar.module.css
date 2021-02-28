@@ -1,9 +1,19 @@
-.navbar {
+.nav {
     background-color: dodgerblue;
     margin: 30px;
     padding: 30px;
 }
-.nav {
+.item a {
     text-decoration: none;
-    color: yellow;
+    color: black;
+}
+.item a.active{
+    color:yellow;
+}
+.navigation {
+    color: brown;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
