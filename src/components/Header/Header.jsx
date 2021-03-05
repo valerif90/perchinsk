@@ -7,7 +7,7 @@ const Header = () => {
             <div>
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Barbara_Palvin_Cannes_2016.jpg" height="150" alt=""/>
             </div>
-            <div className={styles.title}>BARBARA</div>
+            <div className={styles.title}>PERCHINSK</div>
         </div>
     )
 }

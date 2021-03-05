@@ -1,7 +1,7 @@
 import React from 'react';
-import User from '../User/User'
+import User from '../User/User';
 
-const Users = () => {
+let Users = (props) => {
 
     return ( <div>
         <User name="Nastya"/>

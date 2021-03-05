@@ -5,20 +5,21 @@ import Users from "./components/Users/Users";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import {Route} from 'react-router-dom';
-import Messages from "./components/Messages/Messages";
 import Profile from './components/Profile/Profile';
+import DialogsContainer from "./components/Messages/DialogsContainer";
 
-const App = () => {
+const App = (props) => {
+
     return (
         <div className={styles.container}>
                 <Header />
             <div className={styles.section}>
                 <Navbar />
             <div className={styles.container_content}>
-                <Route path='/profile' component={Profile}/>
-                <Route path='/user' component={User}/>
-                <Route path='/users' component={Users}/>
-                <Route exact path='/messages' component={Messages}/>
+                <Route path='/profile' render={ () => <Profile store={props.store} />} />
+                <Route path='/user' render={ () => <User />} />
+                <Route path='/users' render={ () => <Users />} />
+                <Route path='/dialogs' render={ () => <DialogsContainer store={props.store} />} />
             </div>
             </div>
         </div>
