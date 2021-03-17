@@ -1,15 +1,10 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const ADD_POST = 'ADD_POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
 
 
 let initialState = {
-    posts: [
-      {id: '1', message: 'Hi', likesCount: '15'},
-      {id: '2', message: 'Hello', likesCount: '20'},
-      {id: '3', message: 'Yo', likesCount: '20'},
-      {id: '4', message: 'Moove', likesCount: '20'}
-      ],
-      newPostText: ''
+    posts: [],
+    newPostText: ''
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -37,11 +32,11 @@ const profileReducer = (state = initialState, action) => {
     }
 };
 
-export const addPostActionCreator  = () => {
+export const addPostAC  = () => {
     return { type: ADD_POST }
   };
   
-  export const updateNewPostTextActionCreator = (text) => {
+  export const updateNewPostTextAC = (text) => {
     return {
         type: UPDATE_NEW_POST_TEXT, 
         newText: text

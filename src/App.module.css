@@ -1,10 +1,17 @@
-body {
-  background:#fff1e5;
+.wallpaper {
+  position: absolute;
+  width: max-content;
+  z-index: 1;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
 }
 .container {
-  background-color:#f1f1f1;
+  background-color:rgb(229, 243, 231);;
   position: relative;
-  margin: 0 auto;
+  width: 1170px;
+  margin-left: 150px;
+  margin-right: auto;
+  z-index: 2;
 }
 .container_content {
   background-color: blanchedalmond;

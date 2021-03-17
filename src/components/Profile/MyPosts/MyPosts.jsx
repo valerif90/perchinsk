@@ -22,7 +22,7 @@ let postsElements = props.posts.map( post => <Post id ={post.id} message ={post.
         <div>
             <h3>My posts</h3>
             <div>
-                <textarea onChange={onPostChange} name="" ref={newPostElement} cols="30" rows="5" value={props.newPostText}/>
+                <textarea onChange={onPostChange} ref={newPostElement} cols="30" rows="5" value={props.newPostText}/>
                 <div>
                     <button onClick={onAddPost}>Add post!</button>
                 </div>
